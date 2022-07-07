@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="./media/Wonderful_Diamonds_logo.png" alt="" draggable="false">
+            <ul>
+                <li class="nav-link"><a href="#benefits">Benefits</a></li>
+                <li class="nav-link"><a href="#product-video">Product Video</a></li>
+                <li class="nav-link"><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="benefits">
+            <div class="grid">
+                <span class="material-icons icon">
+                    precision_manufacturing
+                </span>
+                <div>
+                    <h2>Advanced Technology</h2>
+                    <p>We use the most advanced technology to grow, cut and polish our diamonds.</p>
+                </div>
+                <span class="material-icons icon">local_shipping</span>
+                <div>
+                    <h2>Safe and Fast Shipping</h2>
+                    <p>We will deliver your diamond as quick as possible and we will refund if you don't receive your diamond.</p>
+                </div>
+                <span class="material-icons icon">auto_awesome</span>
+                <div>
+                    <h2>High Quality</h2>
+                    <p>All our diamonds follow the guidelines from the GIA's (Gemological Institute of America) International Diamond Grading System™.</p>
+                </div>
+            </div>
+        </section>
+        <section id="product-video">
+            <video id="video" width="480" height="270" controls>
+                <source src="./media/Diamond_Video.mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section id="pricing">
+                <div class="item">
+                    <p class="item-title">Round Diamond</p>
+                    <img class="item-image" src="./media/round_diamond.png" alt="">
+                    <p class="item-price">$1,205</p>
+                    <p href="#" class="item-button">Select</p>
+                </div>
+                <div class="item">
+                    <p class="item-title">Oval Diamond</p>
+                    <img class="item-image" src="./media/oval_diamond.png" alt="">
+                    <p class="item-price">$1,270</p>
+                    <p href="#" class="item-button">Select</p>
+                </div>
+                <div class="item">
+                    <p class="item-title">Pear Diamond</p>
+                    <img class="item-image" src="./media/pear_diamond.png" alt="">
+                    <p class="item-price">$1,152</p>
+                    <p href="#" class="item-button">Select</p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Enter your e-mail to receive special offers of our shop!</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input id="email" name="email" type="email" placeholder="Your best e-mail">
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        <p>&copy; Wonderful Diamonds 2022</p>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>A design project from <a href="https://www.freecodecamp.org" target="_blank" rel="noopener" class="underline">Free Code
+            Camp</a>. Made by <a href="https://github.com/italo617" target="_blank" rel="noopener" class="underline">italo617</a>.</p>
+    </footer>
+</body>
+</html>

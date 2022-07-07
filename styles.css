@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: #6C7D47;
+    --background-color: #F1E9CA;
+    --item-background-color1: white;
+    --item-background-color2: #6C7D47;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 70px 0 0;
+    font-size: 16px;
+    color: var(--primary-color, black);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: unset;
+}
+
+#nav-bar {
+    width: 100vw;
+    margin: 0 1em 1em;
+    padding: 1em 1em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--background-color);;
+}
+
+#nav-bar #header-img {
+    height: 40px;
+    margin: 0 0;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+
+    #nav-bar {
+        justify-content: center;
+    }
+
+    #nav-bar ul {
+        display: none
+    }
+}
+
+
+#nav-bar li {
+    padding: 0 1em 0;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: var(--secondary-color, darkgray);
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#benefits {
+    margin-bottom: 1em;
+}
+
+#benefits .grid {
+    display: grid;
+    width: 60vw;
+    grid-template-columns: 1fr 10fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 64px;
+    user-select: none;
+    color: var(--secondary-color, darkgray);
+}
+
+@media (max-width: 480px) {
+    #nav-bar #header-img {
+        height: 30px;
+    }
+
+    #video {
+        width: 100%;
+        margin: 0 1em 2em;
+    }
+}
+
+#video {
+    margin: 0 0 2em;
+}
+
+#pricing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.item {
+    background-color: var(--item-background-color1, white);
+    border-radius: 0.5rem;
+}
+
+.item-title, .item-price, .item-button {
+    font-size: 20px;
+    text-align: center;
+}
+
+.item-title, .item-button {
+    background-color: var(--item-background-color2, darkblue);
+    color: white;
+    padding: 0.5em 0.25em;
+}
+
+.item-title {
+    margin-top: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.item-image {
+    height: 125px;
+    display: block;
+    padding: 0 0.5em;
+    margin: 0 auto;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.item-button {
+    user-select: none;
+    margin-bottom: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.item-button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+
+}
+
+#email {
+    font-size: 16px;
+    border-radius: 0.25em;
+}
+
+#submit {
+    color: var(--secondary-color);
+    background-color: white;
+    border:none;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    padding: 0.25em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li:not(:last-child)::after {
+    content: "|";
+    padding: 0 0.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:not(.underline) {
+    text-decoration: none;
+}
+
